@@ -1,4 +1,4 @@
-package com.ua.sutty.servlets;
+package com.ua.sutty.servletswithoutxml;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,10 +8,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/hello")
-public class HelloServlet extends HttpServlet {
+public class HelloServletWithoutXml extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().append("Hello World");
+        resp.getWriter().append("Hello World without xml");
     }
 }
